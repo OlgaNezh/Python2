@@ -1,11 +1,11 @@
-my_str = input("введите фразу: ")
-my_word = []
-num = 1
-for el in range(my_str.count(' ') + 1):
-    my_word = my_str.split()
-    if len(str(my_word)) <= 10:
-        print(f" {num} {my_word [el]}")
-        num += 1
+def power(x, y):
+    res = 1
+    for i in range(abs(y)):
+        res *= x
+    if y >= 0:
+        return res
     else:
-        print(f" {num} {my_word [el] [0:10]}")
-        num += 1
+        return 1 / res
+
+
+print(power(float(input("Первое значение - ")), int(input("Второе значение - "))))

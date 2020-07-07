@@ -1,31 +1,4 @@
-# a = 0
-# b = 1
-# c = 2
-# d = 3
-# a,b,c,d = d,c,a,b
-# a,b,c,d
-# (0, 1, 2, 3)
-# e = 3.75
-# f = "hello"
-# e, f = f,e
-# e
-# 'hi'
-# f
-# 3.75
-# print(e)
-# print(b)
-# print(c)
+def my_func(name, surname, year_of_birth, city, email, phone):
+    return ' '.join([name, surname, year_of_birth, city, email, phone])
+print(my_func(name = 'Olga', surname = 'Nezhinets', year_of_birth = '1982', city = 'Moscow', email ='nezh.2006@mail.ru', phone = '89096986615'))
 
-
-el_count = int(input("Укажите число элементов списка "))
-my_list = [8]
-i = 0
-el = 0
-while i < el_count:
-    my_list.append(input("Укажите следующее значение списка "))
-    i += 1
-
-for elem in range(int(len(my_list)/2)):
-        my_list[el], my_list[el + 1] = my_list [el + 1], my_list[el]
-        el += 2
-print(my_list)
