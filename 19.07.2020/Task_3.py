@@ -30,11 +30,12 @@ class Cell():
             excess -= the_row_size
         return strres
 
+
 c5 = Cell(5)
 c6 = Cell(6)
 
 print('add: c5 + c6:', c5 + c6)
-print('sub: c6 - c5:', c6 - c5 )
+print('sub: c6 - c5:', c6 - c5)
 
 try:
     print(c5 - c6)
@@ -44,6 +45,4 @@ except ArithmeticError:
 print('mul: c5 * c6:', c5 * c6)
 print('div: c5 / c6:', c5 / c6)
 print('div: c6 / c5:', c6 * c5)
-
-
 
